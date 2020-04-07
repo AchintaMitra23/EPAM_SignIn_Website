@@ -1,0 +1,240 @@
+*{
+    user-select: none;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    border-radius: 5px;
+}
+.head {
+    width: 100%;
+    height: 50px;
+    background-color: dodgerblue;
+    color: white;
+    display: inline-flexbox;
+}
+.head ul {
+    display: -webkit-inline-flex;
+    text-decoration: none;
+}
+.head ul li {
+    display: inline-flex;
+    text-decoration: none;
+    text-emphasis: none;
+    list-style: none;
+}
+.head ul li h2 {
+    margin-top: -5px;
+}
+.head ul li .fa-graduation-cap {
+    margin-left: 5px;
+    margin-right: 85px;;
+}
+.head ul li .fa-times {
+    margin-left: 85px;
+    margin-right: 5px;
+}
+.upper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.input-container {
+    display: flex;
+    width: 90%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 18px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.input-container:focus {
+    border-color: green;
+} 
+.icon {
+    padding: 10px;
+    color: grey;
+    min-width: 50px;
+    text-align: center;
+} 
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: monospace;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 85%;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.5;
+} 
+.btn:hover,
+.btn-f:hover,
+.btn-g:hover,
+.btn-e:hover {
+    opacity: 1;
+}
+.options {
+    margin-top: -25px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.options .forgot {
+    margin-right: 65px;
+}
+.options .register {
+    margin-left: 65px;
+}
+.options a {
+    text-decoration: none;
+    text-emphasis: none;
+    text-overflow: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: black;
+    font-style: normal;
+}
+h5 {
+    text-align: center;
+    font-size: 12px;
+    max-width: 100%;
+    position: relative;
+    color: grey;
+}
+h5:before {
+    content: "";
+    display: block;
+    width: 175px;
+    height: 2px;
+    background-color: grey;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+h5:after {
+    content: "";
+    display: block;
+    width: 175px;
+    height: 2px;
+    background-color: grey;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+.lower {
+    text-align: center;
+}
+.btn-f {
+    background-color: #3b5998;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: monospace;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 85%;
+    text-align: center;
+    margin-bottom: 10px;
+    opacity: 0.8;
+} 
+.btn-g {
+    background-color: #DB4437;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: monospace;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 85%;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0.8;
+} 
+.btn-e {
+    background-color: greenyellow;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: monospace;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 85%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+} 
+  
+@media only screen and (max-width: 990px) {
+    .container {
+        width: 50%;
+        position: absolute;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+    .head ul li .fa-graduation-cap {
+        margin-left: 5px;
+        margin-right: 135px;;
+    }
+    .head ul li .fa-times {
+        margin-left: 135px;
+        margin-right: 5px;
+    }
+    h5:before {
+        content: "";
+        display: block;
+        width: 220px;
+        height: 2px;
+        background-color: grey;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: -2;
+    }
+    h5:after {
+        content: "";
+        display: block;
+        width: 220px;
+        height: 2px;
+        background-color: grey;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: -2;
+    }
+    
+.options .forgot {
+    margin-right: 120px;
+}
+.options .register {
+    margin-left: 120px;
+}
+}
